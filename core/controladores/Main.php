@@ -2,12 +2,27 @@
 
 namespace core\controladores;
 
+use core\classes\Functions;
+
 class Main{
 
+    // ===========================================================
     public function index(){
-        echo 'Inicio!!!!!!';
+
+        $dados = [
+            'titulo' => 'Este é o título',
+            'clientes' => ['joao', 'ana', 'carlos']
+        ];
+
+        Functions::Layout([
+            'layouts/html_header',
+            'pagina_inicial',
+            'layouts/html_footer',
+        ], $dados);
+
     }
 
+    // ===========================================================
     public function loja(){
         echo 'Loja!!!!!!';
     }
