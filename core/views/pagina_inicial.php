@@ -5,4 +5,4 @@
 <h5>Texto</h5>
 <h6>Esse sai pequeno</h6>
 
-<!-- 11:05
+<h1><i class="far fa-trash-alt"></i></h1>
