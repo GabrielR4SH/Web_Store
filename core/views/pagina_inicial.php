@@ -1,8 +1,13 @@
-<h1>Texto</h1>
-<h2>Texto</h2>
-<h3>Texto</h3>
-<h4>Texto</h4>
-<h5>Texto</h5>
-<h6>Esse sai pequeno</h6>
+<?php 
+use core\classes\Store;
+?>
 
-<h1><i class="far fa-trash-alt"></i></h1>
+<div>
+
+   <?php if(store::clienteLogado()):?>
+   <p> SIM </p>
+   <?php else:?>
+   <p>Nao</p>
+
+   <?php endif;?>
+</div>
